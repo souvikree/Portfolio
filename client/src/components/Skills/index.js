@@ -1,150 +1,38 @@
-import React from 'react'
-import styled from 'styled-components'
-import { skills } from '../../data/constants'
-
-const Container = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-z-index: 1;
-align-items: center;
-`
-
-const Wrapper = styled.div`
-position: relative;
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: column;
-width: 100%;
-max-width: 1100px;
-gap: 12px;
-@media (max-width: 960px) {
-    flex-direction: column;
-}
-`
-
-export const Title = styled.div`
-font-size: 42px;
-text-align: center;
-font-weight: 600;
-margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-margin-top: 12px;
-      font-size: 32px;
-  }
-`;
-
-export const Desc = styled.div`
-    font-size: 18px;
-    text-align: center;
-    max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
-        font-size: 16px;
-    }
-`;
-
-const SkillsContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  gap: 30px;
-  justify-content: center;
-`
-
-const Skill = styled.div`
-  width: 100%;
-  max-width: 500px;
-  background: ${({ theme }) => theme.card};
-  border: 0.1px solid #854CE6;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  border-radius: 16px;
-  padding: 18px 36px;
-  @media (max-width: 768px) {
-    max-width: 400px;
-    padding: 10px 36px;
-  }
-  @media (max-width: 500px) {
-    max-width: 330px;
-    padding: 10px 36px;
-  }
-
-
-`
-
-const SkillTitle = styled.h2`
-  font-size: 28px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
-  margin-bottom: 20px;
-  text-align: center;
-`
-
-const SkillList = styled.div`
-  display: flex;
-  justify-content: center; 
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 20px;
-`
-
-const SkillItem = styled.div`
-  font-size: 16px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 80};
-  border: 1px solid ${({ theme }) => theme.text_primary + 80};
-  border-radius: 12px;
-  padding: 12px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  @media (max-width: 768px) {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-  @media (max-width: 500px) {
-    font-size: 14px;
-    padding: 6px 12px;
-  }
-`
-
-const SkillImage = styled.img`
-  width: 24px;
-  height: 24px;
-`
-
+import React from 'react';
+import { skills } from '../../data/constants';  // Ensure this is the correct import path
 
 const Skills = () => {
   return (
-    <Container id="skills">
-      <Wrapper>
-        <Title>Skills</Title>
-        <Desc>Here are some of my skills on which I have been working on for the past 2 years.
-        </Desc>
-        <SkillsContainer>
+    <div id="skills" className="relative z-10 flex flex-col items-center justify-center">
+      <div className="relative flex flex-col items-center justify-between w-full max-w-[1100px] gap-3 py-5 px-0 md:flex-col">
+        <h2 className="text-4xl text-center font-semibold mt-5 text-white md:text-4xl md:mt-3">TECHNICAL SKILLS</h2>
+        <p className="text-lg text-center max-w-[600px] text-gray-300 md:text-base md:mt-3">
+          Here are some of my skills on which I have been working on for the past 2 years.
+        </p>
+        <div className="w-auto flex flex-wrap mt-8 gap-8 justify-center">
           {skills.map((skill) => (
-            <Skill>
-              <SkillTitle>{skill.title}</SkillTitle>
-              <SkillList>
+            <div
+              key={skill.title}
+              className="w-full max-w-[550px] bg-gradient-to-r from-purple-800 via-purple-600 to-purple-400 border border-[#854CE6] shadow-2xl rounded-lg p-6 md:max-w-[450px] md:p-5"
+            >
+              <h3 className="text-2xl font-bold text-white mb-4 text-center">{skill.title}</h3>
+              <div className="flex flex-wrap gap-4 mb-4 justify-center">
                 {skill.skills.map((item) => (
-                  <SkillItem>
-                    <SkillImage src={item.image}/>
+                  <div
+                    key={item.name}
+                    className="text-base font-normal text-gray-100 bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 flex items-center gap-3 shadow-md md:text-sm md:px-3 md:py-2"
+                  >
+                    <img src={item.image} alt={item.name} className="w-8 h-8" />
                     {item.name}
-                  </SkillItem>
+                  </div>
                 ))}
-              </SkillList>
-            </Skill>
+              </div>
+            </div>
           ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
-        </SkillsContainer>
-      </Wrapper>
-    </Container>
-  )
-}
-
-export default Skills
+export default Skills;

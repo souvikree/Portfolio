@@ -1,57 +1,49 @@
 import React from 'react';
 import HeroBgAnimation from '../HeroBgAnimation';
-import { Bio } from '../../data/constants';
+import { Img } from './HeroStyle';
 import HeroImg from '../../images/myim.jpg';
 import Typewriter from 'typewriter-effect';
+import { Bio } from '../../data/constants';
 
 const HeroSection = () => {
     return (
-        <section id="about" className="relative bg-gray-100 py-20 lg:py-32">
-            <div className="absolute flex justify-end inset-0 w-full h-full max-w-screen-xl overflow-hidden px-8 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:justify-center lg:px-0">
-                <HeroBgAnimation />
-            </div>
-            <div className="container mx-auto flex flex-col lg:flex-row items-center px-6 lg:px-8 relative z-10">
-                {/* Left Container */}
-                <div className="flex-1 lg:mr-16 lg:w-1/2 mb-12 lg:mb-0 text-center lg:text-left">
-                    <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-                        Hi, I am <br /> {Bio.name}
-                    </h1>
-                    <div className="text-2xl lg:text-3xl font-semibold text-gray-700 mb-4">
-                        I am a
-                        <span className="text-indigo-600 ml-2">
-                            <Typewriter
-                                options={{
-                                    strings: Bio.roles,
-                                    autoStart: true,
-                                    loop: true,
-                                }}
-                            />
-                        </span>
+        <div id="about" className='relative z-0'>
+            <div className='flex justify-center relative p-[80px_30px] z-10 clip-path-custom sm:p-[66px_16px] xs:p-[32px_16px]'>
+                <div className="absolute flex justify-end ml-96 right-0 bottom-0 w-full h-full max-w-[1360px] overflow-hidden px-[30px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:justify-center md:px-0">
+                    <HeroBgAnimation />
+                </div>
+                <div className="relative flex flex-col md:flex-row justify-between w-full max-w-[1100px]">
+                    <div id="Left" className='w-full flex-1 mb-8 flex flex-col items-start text-left md:items-start md:text-left'>
+                        <div className='font-bold text-[40px] sm:text-[50px] text-white leading-[48px] sm:leading-[68px] sm:mb-2'>
+                            Hi, I am <br /> {Bio.name}
+                        </div>
+                        <div className='font-semibold text-[22px] sm:text-[32px] text-left flex gap-3 text-white leading-[48px] sm:leading-[68px] sm:mb-4'>
+                            I am a
+                            <div className='text-blue-700 cursor-pointer'>
+                                <Typewriter
+                                    options={{
+                                        strings: Bio.roles,
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
+                            </div>
+                        </div>
+                        <div className='text-gray-400 text-sm sm:text-base leading-8 mb-10'>
+                            {Bio.description}
+                        </div>
+                        <a href={Bio.resume} target='display' className='appearance-none text-decoration-none w-full max-w-[300px] text-center py-3 sm:py-4 text-white rounded-lg cursor-pointer text-lg sm:text-xl font-semibold transition-transform duration-200 ease-in-out bg-gradient-to-r from-[#8e2de2] to-[#3f0071] shadow-lg hover:scale-105 hover:shadow-xl hover:brightness-100'>
+                            Check Resume
+                        </a>
                     </div>
-                    <p className="text-lg lg:text-xl text-gray-600 mb-8">
-                        {Bio.description}
-                    </p>
-                    <a
-                        href={Bio.resume}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-3 px-6 rounded-lg text-lg font-semibold shadow-lg hover:scale-105 transition-transform duration-300"
-                    >
-                        Check Resume
-                    </a>
-                </div>
 
-                {/* Right Container */}
-                <div className="flex-1 lg:w-1/2 flex justify-center lg:justify-end">
-                    <img
-                        src={HeroImg}
-                        alt="hero-image"
-                        className="w-full max-w-xs lg:max-w-md rounded-full border-4 border-indigo-500"
-                    />
+                    <div id="Right" className='w-full flex-1 pb-40 pl-40 flex justify-center items-center'>
+                        <Img src={HeroImg} alt="hero-image" className='max-w-full h-auto'/>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
-};
+}
 
 export default HeroSection;
