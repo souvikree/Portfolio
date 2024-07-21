@@ -3,7 +3,7 @@ import React from 'react';
 const ProjectCards = ({ project, setOpenModal }) => {
     return (
         <div
-            className="relative w-[330px] h-[490px] bg-gradient-to-br from-gray-800 to-gray-900 cursor-pointer rounded-lg shadow-lg overflow-hidden p-6 flex flex-col gap-4 transition-transform duration-300 ease-in-out hover:translate-y-[-8px] hover:shadow-2xl hover:brightness-110"
+            className="relative w-[330px] h-[490px] mb-24  bg-gradient-to-br from-gray-800 to-gray-900 cursor-pointer rounded-lg shadow-lg overflow-hidden p-6 flex flex-col gap-4 transition-transform duration-300 ease-in-out hover:translate-y-[-8px] hover:shadow-2xl hover:brightness-110"
             onClick={() => setOpenModal({ state: true, project: project })}
         >
             {/* Image Section */}

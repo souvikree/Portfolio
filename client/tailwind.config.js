@@ -6,11 +6,11 @@ module.exports = {
   safelist: ['clip-path-polygon'],
   theme: {
     extend: {
-      clipPath: {
-        'custom': 'polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%)',
-        'custom2': 'polygon(0 0, 100% 0, 100% 100%, 100% 98%, 0 100%)',
-
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%)',
       },
+      
+      
       spacing: {
         '7.5': '30px',
         '10': '42px',
@@ -48,6 +48,8 @@ module.exports = {
         'primary-dark': '#3f0071',
         'text-primary': '#333333',
         'text-secondary': '#555555',
+        'custom-dark': '#1c1c27',
+        'custom-primary': '#be1adb',
       },
       boxShadow: {
         'custom': '20px 20px 60px rgba(31, 38, 52, 0.5), -20px -20px 60px rgba(31, 38, 52, 0.5)',
@@ -57,13 +59,6 @@ module.exports = {
   },
   variants: {},
   plugins: [
-    function ({ addUtilities }) {
-      addUtilities({
-        '.clip-path-custom': {
-          clipPath: 'polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%)',
-        },
-      }, ['responsive', 'hover']);
-    },
-    // require('@tailwindcss/line-clamp'),
+   
   ],
 }

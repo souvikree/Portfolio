@@ -1,61 +1,73 @@
-import React from 'react'
-import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink } from './NavbarStyledComponent'
+import React from 'react';
 import { DiCssdeck } from 'react-icons/di';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaGithub } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
-import { Close, CloseRounded } from '@mui/icons-material';
 import { useTheme } from 'styled-components';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const theme = useTheme()
+  const theme = useTheme();
+
   return (
-    <Nav>
-      <div className='flex justify-between items-center h-[60px] z-10 w-full px-6 max-w-[1200px]'>
-        <NavLogo to='/'>
-          <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+    <div className="bg-[#191924] sticky top-0 z-10 h-[80px] flex items-center justify-center">
+      <div className="flex justify-between items-center h-[60px] w-full px-6 max-w-[1200px]">
+        <a 
+          href="/" 
+          className="flex items-center text-white mb-1 cursor-pointer"
+        >
+          <DiCssdeck size="3rem" /> 
+          <span className="font-bold text-[18px] ml-2 mr-28">Portfolio</span>
+        </a>
+        
+        <div 
+          className="block lg:hidden text-white cursor-pointer" 
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <FaBars size="1.5rem" />
+        </div>
+
+        <div className="hidden lg:flex ml-24 text-white justify-center items-center gap-10">
+          <a href="#about" className="font-medium transition-colors duration-200 hover:text-[#be1adb]">About</a>
+          <a href='#skills' className="font-medium transition-colors duration-200 hover:text-[#be1adb]">Skills</a>
+          <a href='#experience' className="font-medium transition-colors duration-200 hover:text-[#be1adb]">Experience</a>
+          <a href='#projects' className="font-medium transition-colors duration-200 hover:text-[#be1adb]">Projects</a>
+          <a href='#education' className="font-medium transition-colors duration-200 hover:text-[#be1adb]">Education</a>
+        </div>
+
+        <div className="hidden lg:flex items-center ml-auto">
+          <a 
+            href={Bio.github} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-[#be1adb] font-medium transition-all duration-600 hover:text-white hover:bg-black rounded-full p-2"
+          >
+            <FaGithub size="2.5rem" /> {/* Increase icon size here */}
           </a>
-        </NavLogo>
-        <MobileIcon>
-          <FaBars onClick={() => {
-            setIsOpen(!isOpen)
-          }} />
-        </MobileIcon>
-        <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href='#skills'>Skills</NavLink>
-          <NavLink href='#experience'>Experience</NavLink>
-          <NavLink href='#projects'>Projects</NavLink>
-          <NavLink href='#education'>Education</NavLink>
-        </NavItems>
-        <ButtonContainer>
-          <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
-        </ButtonContainer>
-        {
-          isOpen &&
-          <MobileMenu isOpen={isOpen}>
-            <MobileLink href="#about" onClick={() => {
-              setIsOpen(!isOpen)
-            }}>About</MobileLink>
-            <MobileLink href='#skills' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Skills</MobileLink>
-            <MobileLink href='#experience' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Experience</MobileLink>
-            <MobileLink href='#projects' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Projects</MobileLink>
-            <MobileLink href='#education' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Education</MobileLink>
-            <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
-          </MobileMenu>
-        }
+        </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div 
+            className="fixed top-[80px] right-0 w-full bg-[#191924] p-6 flex flex-col items-center gap-4 transition-transform duration-600 transform translate-y-0 rounded-b-lg shadow-lg z-50"
+          >
+            <a href="#about" onClick={() => setIsOpen(false)} className="font-medium text-white transition-colors duration-200 hover:text-[#854cE6]">About</a>
+            <a href='#skills' onClick={() => setIsOpen(false)} className="font-medium text-white transition-colors duration-200 hover:text-[#854cE6]">Skills</a>
+            <a href='#experience' onClick={() => setIsOpen(false)} className="font-medium text-white transition-colors duration-200 hover:text-[#854cE6]">Experience</a>
+            <a href='#projects' onClick={() => setIsOpen(false)} className="font-medium text-white transition-colors duration-200 hover:text-[#854cE6]">Projects</a>
+            <a href='#education' onClick={() => setIsOpen(false)} className="font-medium text-white transition-colors duration-200 hover:text-[#854cE6]">Education</a>
+            <a 
+              href={Bio.github} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#be1adb] font-medium transition-all duration-600 hover:text-white hover:bg-[#be1adb] rounded-full p-2"
+            >
+              <FaGithub size="2.5rem" /> 
+            </a>
+          </div>
+        )}
       </div>
-    </Nav>
-  )
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;

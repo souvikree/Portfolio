@@ -18,7 +18,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center relative z-10 px-4 py-8 md:px-6 md:py-12">
+    <div className=" flex flex-col items-center justify-center relative z-0 px-4 py-8 md:px-6 md:py-12">
       <div className="relative flex flex-col items-center w-full max-w-2xl px-6 py-8 gap-6 ">
         <h1 className="text-4xl font-bold text-white mb-4 md:text-3xl">Contact</h1>
         <p className="text-lg text-gray-300 text-center mb-6 md:text-base">Feel free to reach out with any questions or opportunities!</p>

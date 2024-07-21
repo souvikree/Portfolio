@@ -7,7 +7,7 @@ import { Bio } from '../../data/constants';
 
 const Footer = () => {
   return (
-    <div className="w-full py-8 text-white flex flex-col items-center">
+    <div className="w-full py-8 text-white flex flex-col items-center clip-path-custom3 ">
       <div className="w-full max-w-4xl flex flex-col items-center gap-4 px-4">
         <h1 className="text-2xl font-semibold text-primary">Souvik Ghosh</h1>
         <div className="flex gap-4 mt-4">

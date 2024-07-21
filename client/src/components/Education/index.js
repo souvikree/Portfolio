@@ -10,7 +10,7 @@ import EducationCard from '../Cards/EducationCard';
 
 const Index = () => {
     return (
-        <div id="education" className="flex flex-col items-center justify-center relative z-10 px-4 py-8 md:px-0 md:py-12">
+        <div id="education" className="flex flex-col items-center justify-center relative z-0 px-4 py-8 md:px-0 md:py-12">
             <div className="relative flex flex-col items-center w-full max-w-4xl px-4 py-8 gap-6">    {/* bg-gray-900 rounded-lg shadow-lg */}
                 <h1 className="text-4xl font-semibold text-white mb-4 md:text-3xl">Education</h1>
                 <p className="text-lg text-gray-300 text-center mb-6 md:text-base">

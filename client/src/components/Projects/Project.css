@@ -1,23 +1,60 @@
-/* Project.css
-.slick-prev, .slick-next {
-  @apply absolute flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full text-white text-2xl z-10;
-  cursor: pointer;
+/* Project.css */
+
+/* Slider Container */
+.slider-container {
+  position: relative;
+  overflow: hidden;
 }
 
-.slick-prev::before, .slick-next::before {
-  @apply text-white; /* Ensure the custom symbols are visible */
-/* } */
+.slick-slide {
+  display: inline-block;
+}
 
-/* .slick-prev::before {
-  content: '<'; /* Custom content for the left arrow */
-/* } */
+/* Slick Slider styles */
+.slick-prev, .slick-next {
+  width: 40px;
+  height: 90px;
+  color: white;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  z-index: 1;
+}
 
-/* .slick-next::before {
-  content: '>'; /* Custom content for the right arrow */
-/* }  */
+.slick-prev {
+  left: 1px;
+}
 
+.slick-next {
+  right: 10px;
+}
 
-/* .slick-prev .slick-prev-text, 
-.slick-next .slick-next-text {
-  display: none;
-}  */
+/* Dot navigation */
+.slick-dots {
+  bottom: -20px;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+}
+
+.project-card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: Adjust the width of the slider items */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: Adjust padding around slider items */
+.slick-slide .project-card-wrapper {
+  padding: 0 10px;
+}

@@ -1,16 +1,20 @@
+import FrontRow from "../images/frontrow.png"
+import EduConnect from "../images/educonnect.png"
+import MyShare from "../images/myshare.png"
+import MyResume from "../files/My_Resume.pdf"
+
 export const Bio = {
   name: "Souvik Ghosh",
   roles: [
-    "Full Stack Developer",
-    "Web3 Enthusiastic",
+    "FullStack Developer",
+    "Web3 Enthusiast",
     "UI/UX Designer",
     
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/souvikree",
-  resume:
-    "https://drive.google.com/file/d/1p66zI2tlD8P876POYg35qsyLIqdouMfn/view",
+  resume: MyResume,
   linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
   twitter: "https://x.com/SouvikG452003?t=kHPTgSCocOQXIh1mvB70SA&s=09",
   instagram: "https://www.instagram.com/dreamydaze_ree?igsh=ZGozYndmYzd3Y20=/",
@@ -337,71 +341,97 @@ export const education = [
 
 export const projects = [
   {
-    id: 9,
-    title: "Spoticlone",
-    date: "Jun 2023 - Jul 2023",
+    id: 0,
+    title: "FrontRow",
+    date: "Jun 2024 - Jul 2024",
     description:
-      "a project that involved creating a basic Spotify clone using HTML, CSS, and JavaScript. This project was designed to showcase my skills in front-end web development.It is a responsive and user-friendly web application that allows users to play music.I used HTML and CSS to design and style the interface, and I implemented JavaScript to handle user input and interaction such as basic playback controls -play, pause, and next.",
-    // image:
-    //   "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+      "Frontrow is a modern web application built with React.js, designed to streamline the process of booking movie tickets and managing user profiles seamlessly. It provides a user-friendly interface for users to explore movies, check showtimes, and book tickets conveniently.",
+    image: FrontRow,
+  
     tags: [
-      "HTML",
-      "CSS",
-      "Javascript"
+      "React Js",
+      "MongoDb",
+      "Node Js",
+      "Express Js",
+      "Redux",
+      "NodeMailer",
+      "Tailwindcss",
     ],
     category: "web app",
-    github: "https://github.com/souvikree/spoticlone",
-    // webapp: "https://trackify.duckdns.org",
+    github: "https://github.com/souvikree/FrontRow",
+    webapp: "https://buyfrontrow.netlify.app/",
   },
   {
-    id: 0,
+    id: 1,
     title: "EduConnect",
     date: "July 2023 - September 2023",
     description:
       "Educonnect is an e-library project that I am developing to provide a platform for users to access a collection of digital books, articles, and other educational resources.",
-    // image:
-    //   "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Bootstrap"],
+    image: EduConnect ,
+    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Bootstrap", "Redux", "NodeMailer"],
     category: "web app",
     github: "https://github.com/souvikree/EduConnect",
-    // webapp: "https://podstream.netlify.app/",
+    webapp: "https://edu-connect-jade.vercel.app/",
     // member: [
     //   {
     //     name: "Souvik Ghosh",
     //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-    //     github: "https://github.com/rishavchanda/",
+    //     linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
+    //     github: "https://github.com/souvikree",
     //   },
     //   {
-    //     name: "Upasana Chaudhuri",
+    //     name: "Chandan Maity",
     //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
+    //     linkedin: "https://www.linkedin.com/in/chandan-maity-4b7643265/",
+    //     github: "https://github.com/upasana0710",
+    //   },
+    // ],
+  },
+  {
+    id: 2,
+    title: "MyShare",
+    date: "Jan 2023",
+    description:
+      "MyShare is a powerful and intuitive file sharing platform designed to make uploading and sharing files easier than ever. With MyShare, you can quickly upload images, documents (DOCX, PDF), and videos through a sleek, user-friendly interface. Plus, once uploaded, files can be easily shared through Facebook, WhatsApp, Gmail, Twitter, LinkedIn, or by copying the link.",
+    image: MyShare ,
+    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Tailwindcss"],
+    category: "web app",
+    github: "https://github.com/souvikree/myShare",
+    webapp: "https://openmyshare.vercel.app/",
+    // member: [
+    //   {
+    //     name: "Souvik Ghosh",
+    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
+    //     linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
+    //     github: "https://github.com/souvikree",
+    //   },
+    //   {
+    //     name: "Chandan Maity",
+    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
+    //     linkedin: "https://www.linkedin.com/in/chandan-maity-4b7643265/",
     //     github: "https://github.com/upasana0710",
     //   },
     // ],
   },
   // {
-  //   id: 1,
-  //   title: "Vexa",
-  //   date: "Oct 2022 - Present",
+  //   id: 9,
+  //   title: "Spoticlone",
+  //   date: "Jun 2023 - Jul 2023",
   //   description:
-  //     "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
-  //   image:
-  //     "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+  //     "a project that involved creating a basic Spotify clone using HTML, CSS, and JavaScript. This project was designed to showcase my skills in front-end web development.It is a responsive and user-friendly web application that allows users to play music.I used HTML and CSS to design and style the interface, and I implemented JavaScript to handle user input and interaction such as basic playback controls -play, pause, and next.",
+  //   // image:
+  //   //   "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
   //   tags: [
-  //     "React Js",
-  //     "MongoDb",
-  //     "Node Js",
-  //     "Express Js",
-  //     "Redux",
-  //     "NodeMailer",
+  //     "HTML",
+  //     "CSS",
+  //     "Javascript"
   //   ],
   //   category: "web app",
-  //   github: "https://github.com/rishavchanda/Project-Management-App",
-  //   webapp: "https://vexa-app.netlify.app/",
+  //   github: "https://github.com/souvikree/spoticlone",
+  //   // webapp: "https://trackify.duckdns.org",
   // },
   {
-    id: 2,
+    id: 3,
     title: "Heart Decease Prediction",
     date: "Jan 2024",
     description:
@@ -429,56 +459,50 @@ export const projects = [
   },
   // {
   //   id: 3,
-  //   title: "Buckoid",
-  //   date: "Dec 2021 - Apr 2022",
+  //   title: "Heart Decease Prediction",
+  //   date: "Jan 2024",
   //   description:
-  //     "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
-  //   image:
-  //     "https://camo.githubusercontent.com/fbf405040ae86b5d4a40f24e4ac034982cb8c0e2d850560ba64527997b258be8/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
-  //   tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
-  //   category: "android app",
-  //   github: "https://github.com/rishavchanda/Buckoid-Android-App",
-  //   webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
-  // },
-  // {
-  //   id: 10,
-  //   title: "Job Finding App",
-  //   date: "Jun 2023 - Jul 2023",
-  //   description:
-  //     "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
-  //   image:
-  //     "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-  //   tags: ["React Native", "JavaScript", "Axios"],
-  //   category: "android app",
-  //   github: "https://github.com/rishavchanda/Job-finder-App",
-  //   webapp: "https://github.com/rishavchanda/Job-finder-App",
+  //     "A dataset is selected from the UCI repository with patient's medical history and attributes. By using this dataset, we predict whether the patient can have a heart disease or not.",
+  //   // image:
+  //   //   "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
+  //   tags: ["Python"],
+  //   category: "machine learning",
   // },
   // {
   //   id: 4,
-  //   title: "Whatsapp Clone",
-  //   date: "Jul 2021",
+  //   title: "Heart Decease Prediction",
+  //   date: "Jan 2024",
   //   description:
-  //     "A WhatsApp clone made with React JS, Firebase, and Material UI. It has Phone Authentication, Real-time Database. It has a chat room where users can chat with each other. It has a sidebar where users can see all the chat rooms and can create a new chat room. It has a login page where users can log in with their Google account.",
-  //   image:
-  //     "https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-rishav.appspot.com/o/Screenshot%20(151).png?alt=media&token=48391593-1ef0-4a8c-a92a-eb82bdf38e89",
-  //   tags: ["React Js", "Firebase", "Firestore", "Node JS"],
-  //   category: "web app",
-  //   github: "https://github.com/rishavchanda/Whatsapp-Clone-React-Js",
-  //   webapp: "https://whatsapp-clone-rishav.web.app",
+  //     "A dataset is selected from the UCI repository with patient's medical history and attributes. By using this dataset, we predict whether the patient can have a heart disease or not.",
+  //   // image:
+  //   //   "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
+  //   tags: ["Python"],
+  //   category: "machine learning",
   // },
-  {
-    id: 5,
-    title: "Todo Web App",
-    date: "Jun 2024",
-    description:
-      " A Todo Web App made with React JS. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
-    // image:
-    //   "https://camo.githubusercontent.com/a328255ad96f861f57d25096d28018ab2656c689a1456b0d145764009bed2d1a/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f74253230283938292e706e673f616c743d6d6564696126746f6b656e3d33643335646366322d626666322d343730382d393031632d343232383866383332386633",
-    tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
-    category: "web app",
-    //github: "https://github.com/rishavchanda/Todo-Web-App",
-   // webapp: "https://rishav-react-todo.netlify.app/",
-  },
+  // {
+  //   id: 4,
+  //   title: "Heart Decease Prediction",
+  //   date: "Jan 2024",
+  //   description:
+  //     "A dataset is selected from the UCI repository with patient's medical history and attributes. By using this dataset, we predict whether the patient can have a heart disease or not.",
+  //   // image:
+  //   //   "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
+  //   tags: ["Python"],
+  //   category: "machine learning",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Todo Web App",
+  //   date: "Jun 2024",
+  //   description:
+  //     " A Todo Web App made with React JS. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
+  //   // image:
+  //   //   "https://camo.githubusercontent.com/a328255ad96f861f57d25096d28018ab2656c689a1456b0d145764009bed2d1a/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f74253230283938292e706e673f616c743d6d6564696126746f6b656e3d33643335646366322d626666322d343730382d393031632d343232383866383332386633",
+  //   tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
+  //   category: "web app",
+  //   //github: "https://github.com/rishavchanda/Todo-Web-App",
+  //  // webapp: "https://rishav-react-todo.netlify.app/",
+  // },
   // {
   //   id: 6,
   //   title: "Breaking Bad",
