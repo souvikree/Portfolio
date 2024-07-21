@@ -1,0 +1,23 @@
+/* Project.css
+.slick-prev, .slick-next {
+  @apply absolute flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full text-white text-2xl z-10;
+  cursor: pointer;
+}
+
+.slick-prev::before, .slick-next::before {
+  @apply text-white; /* Ensure the custom symbols are visible */
+/* } */
+
+/* .slick-prev::before {
+  content: '<'; /* Custom content for the left arrow */
+/* } */
+
+/* .slick-next::before {
+  content: '>'; /* Custom content for the right arrow */
+/* }  */
+
+
+/* .slick-prev .slick-prev-text, 
+.slick-next .slick-next-text {
+  display: none;
+}  */

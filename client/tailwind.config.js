@@ -64,5 +64,6 @@ module.exports = {
         },
       }, ['responsive', 'hover']);
     },
+    // require('@tailwindcss/line-clamp'),
   ],
 }

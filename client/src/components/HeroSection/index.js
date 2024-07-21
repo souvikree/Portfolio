@@ -9,7 +9,7 @@ const HeroSection = () => {
     return (
         <div id="about" className='relative z-0'>
             <div className='flex justify-center relative p-[80px_30px] z-10 clip-path-custom sm:p-[66px_16px] xs:p-[32px_16px]'>
-                <div className="absolute flex justify-end ml-96 right-0 bottom-0 w-full h-full max-w-[1360px] overflow-hidden px-[30px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:justify-center md:px-0">
+                <div className="absolute flex justify-end ml-96 right-0 bottom-0 w-full h-full max-w-[1760px] overflow-hidden px-[30px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:justify-center md:px-0">
                     <HeroBgAnimation />
                 </div>
                 <div className="relative flex flex-col md:flex-row justify-between w-full max-w-[1100px]">

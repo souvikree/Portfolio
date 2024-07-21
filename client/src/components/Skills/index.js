@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <div id="skills" className="relative z-10 flex flex-col items-center justify-center">
       <div className="relative flex flex-col items-center justify-between w-full max-w-[1100px] gap-3 py-5 px-0 md:flex-col">
-        <h2 className="text-4xl text-center font-semibold mt-5 text-white md:text-4xl md:mt-3">TECHNICAL SKILLS</h2>
+        <h2 className="text-4xl text-center font-semibold mt-5 text-white md:text-3xl md:mt-3">TECHNICAL SKILLS</h2>
         <p className="text-lg text-center max-w-[600px] text-gray-300 md:text-base md:mt-3">
           Here are some of my skills on which I have been working on for the past 2 years.
         </p>
