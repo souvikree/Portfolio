@@ -28,22 +28,27 @@ function App() {
         <Navbar />
         <div 
           
-          className=" bg-custom-dark min-h-screen overflow-x-hidden">
+          className=" bg-custom-dark   min-h-screen overflow-x-hidden">
           <HeroSection />
           <div className="bg-custom-gradient w-full">
             <Skills />
             <Experience />
-          </div>
+          {/* </div> */}
+          {/* <div className="bg-custom-gradient w-full"> */}
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
-          <div className="bg-custom-gradient w-full">
+          {/* </div>
+          <div className="bg-custom-gradient w-full"> */}
             <Education />
             <Contact />
           </div>
-          <Footer />
+          
           {openModal.state &&
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
           }
         </div>
+        <div className=" bg-gray-950      " >
+          <Footer />
+          </div>
       </Router>
     </ThemeProvider>
   );

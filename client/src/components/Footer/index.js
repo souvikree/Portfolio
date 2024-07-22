@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="w-full py-10 text-white flex flex-col items-center bg-gradient-to-tl from-gray-900 via-gray-800 to-gray-700">
       <div className="w-full max-w-4xl flex flex-col items-center gap-4 px-4">
-        <h1 className="text-3xl font-semibold text-primary">Souvik Ghosh</h1>
+        <h1 className="text-3xl font-semibold text-white">Souvik Ghosh</h1>
         <p className="mt-2 text-gray-400 text-center text-sm max-w-md">
           Passionate developer with experience in web and mobile applications. Connect with me on social media!
         </p>
