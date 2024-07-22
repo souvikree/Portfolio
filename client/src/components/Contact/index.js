@@ -9,13 +9,10 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm(
-      'service_4lpw8h4',
-      // process.env.REACT_APP_SERVICE_ID, 
-      // process.env.REACT_APP_TEMPLATE_ID, 
-      'template_o7jcuc2',
+      process.env.REACT_APP_SERVICE_ID, 
+      process.env.REACT_APP_TEMPLATE_ID, 
       form.current, 
-      // process.env.REACT_APP_USER_ID
-      'sT4P-SCbPqdROClII'
+      process.env.REACT_APP_USER_ID
     )
     .then(() => {
       setOpen(true);
