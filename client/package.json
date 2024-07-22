@@ -1,7 +1,6 @@
 {
-  "name": "Souvik-Ghosh-Portfolio",
+  "name": "Portfolio",
   "version": "0.1.0",
-  "homepage": "https://github.com/souvikree.github.io",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
