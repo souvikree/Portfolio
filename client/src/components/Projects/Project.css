@@ -36,11 +36,11 @@
 
 .slick-dots li button:before {
   font-size: 10px;
-  color: white;
+  color: #FFFFFF !important;
 }
 
 .slick-dots li.slick-active button:before {
-  color: white;
+  color: #FFFFFF !important;
 }
 
 .project-card-wrapper {
