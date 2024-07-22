@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.54923fea.css",
+    "main.js": "/static/js/main.b07db7a6.js",
+    "static/media/frontrow.png": "/static/media/frontrow.f5b31e75f7389d820dd3.png",
+    "static/media/educonnect.png": "/static/media/educonnect.dd37169194c3ae7f58db.png",
+    "static/media/My_Resume.pdf": "/static/media/My_Resume.1d8db9aa75b03cdcd89f.pdf",
+    "static/media/myim.jpg": "/static/media/myim.26c6e4ccb244e9fb3611.jpg",
+    "static/media/go.png": "/static/media/go.d3f5f42f843edaf2b898.png",
+    "static/media/myshare.png": "/static/media/myshare.e1932db503b0099fc8e0.png",
+    "static/media/figma": "/static/media/figma.c832f29a7e5761ba8188",
+    "static/media/node.png": "/static/media/node.1886fb068337266718f0.png",
+    "static/media/adobe.png": "/static/media/adobe.971bd9a3d705767f2032.png",
+    "static/media/express.png": "/static/media/express.21a8889e56584ac037b7.png",
+    "static/media/postman.svg": "/static/media/postman.c74cd48d00339ba03ff2e6ed3f9d0c4d.svg",
+    "static/media/tailwind": "/static/media/tailwind.c276b93de9cf7317e2fb",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/git.svg": "/static/media/git.e91eb163f73eebdbc665d8748b36a8e4.svg",
+    "index.html": "/index.html",
+    "main.54923fea.css.map": "/static/css/main.54923fea.css.map",
+    "main.b07db7a6.js.map": "/static/js/main.b07db7a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54923fea.css",
+    "static/js/main.b07db7a6.js"
+  ]
+}
