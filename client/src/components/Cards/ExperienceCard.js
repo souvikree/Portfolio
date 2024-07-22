@@ -1,49 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ExperienceCard = ({ experience }) => {
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const handleClick = () => {
+        setIsExpanded(!isExpanded);
+    };
+
     return (
-        <div className="w-full max-w-[650px] rounded-lg shadow-lg p-4 flex flex-col gap-4 relative overflow-hidden transition-transform duration-300 ease-in-out border border-[#306EE8] hover:shadow-xl hover:translate-y-[-5px] sm:max-w-[300px] sm:p-3 sm:gap-2">
-            {/* Top Section with Image and Details */}
-            <div className="w-full flex gap-3 items-start">
+        <div
+            className="relative w-[300px] rounded-lg border border-[#854CE6] shadow-lg p-4 flex flex-col gap-3 transition-transform duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 hover:border-[#6E4AB6] overflow-hidden md:w-[850px]  "
+            onClick={handleClick}
+        >
+            
+            <div className="w-full flex flex-col gap-4 sm:flex-row sm:gap-3">
                 <img 
                     src={experience.img} 
                     alt="experience" 
-                    className="h-12 w-12 bg-black rounded-lg object-cover sm:h-10 sm:w-10"
+                    className="h-14 w-14 md:h-12 md:w-12 lg:h-18 lg:w-18 bg-black rounded-lg object-cover"
                 />
-                <div className="w-full flex flex-col justify-center">
-                    <div className="text-lg font-semibold text-[#306EE8] sm:text-sm">{experience.role}</div>
-                    <div className="text-sm font-medium text-gray-600 sm:text-xs">{experience.company}</div>
-                    <div className="text-xs font-normal text-gray-500 sm:text-[10px]">{experience.date}</div>
+                <div className="flex flex-col w-full">
+                    <div className="text-lg  font-semibold text-[#306EE8]">{experience.role}</div>
+                    <div className="text-sm  font-medium text-gray-600">{experience.company}</div>
+                    <div className="text-xs  font-normal text-gray-500">{experience.date}</div>
                 </div>
             </div>
-            {/* Description Section */}
-            <div className="w-full text-sm font-normal text-gray-800 mb-4 sm:text-xs overflow-hidden">
-                {experience.desc && (
-                    <span className="block h-12 line-clamp-4">{experience.desc}</span>
-                )}
-                {experience.skills && (
-                    <>
-                        <br />
-                        <div className="w-full flex flex-col gap-2 mt-[-10px]">
-                            <strong>Skills:</strong>
-                            <div className="flex flex-wrap gap-2">
-                                {experience.skills.map((skill, index) => (
-                                    <div className="text-sm font-normal text-gray-800 sm:text-xs" key={index}>
-                                        • {skill}
-                                    </div>
-                                ))}
+            
+             {experience.skills && (
+                <div className="w-full flex flex-col gap-2 mt-2">
+                    <strong className="text-white ">Skills:</strong>
+                    <div className="flex flex-wrap gap-2">
+                        {experience.skills.map((skill, index) => (
+                            <div className="text-sm  font-normal text-white" key={index}>
+                                • {skill}
                             </div>
-                        </div>
-                    </>
-                )}
+                        ))}
+                    </div>
+                </div>
+            )}
+            
+            <div className={`text-sm font-normal mt-2 text-white ${isExpanded ? 'line-clamp-none' : 'line-clamp-4'}`}>
+                <span className={`block transition-all duration-300 ease-in-out ${isExpanded ? 'h-auto' : 'h-[28px] overflow-hidden'}`}>
+                    {experience.desc}
+                </span>
             </div>
-            {/* Document Image (conditionally visible on hover) */}
+           
+           
             {experience.doc && (
                 <a href={experience.doc} target="_blank" rel="noopener noreferrer">
                     <img 
                         src={experience.doc} 
                         alt="document" 
-                        className="hidden h-16 w-auto bg-black rounded-lg opacity-80 cursor-pointer transition-opacity duration-200 hover:block hover:opacity-100"
+                        className="hidden h-20 w-auto md:h-24 lg:h-28 bg-black rounded-lg opacity-80 cursor-pointer transition-opacity duration-200 hover:block hover:opacity-100"
                     />
                 </a>
             )}

@@ -1,28 +1,32 @@
 import React from 'react';
-import { skills } from '../../data/constants';  // Ensure this is the correct import path
+import { skills } from '../../data/constants';  
 
 const Skills = () => {
   return (
-    <div id="skills" className="relative z-0 flex flex-col items-center justify-center">
-      <div className="relative flex flex-col items-center justify-between w-full max-w-[1100px] gap-3 py-5 px-0 md:flex-col">
-        <h2 className="text-4xl text-center font-semibold mt-5 text-white md:text-3xl md:mt-3">TECHNICAL SKILLS</h2>
-        <p className="text-lg text-center max-w-[600px] text-gray-300 md:text-base md:mt-3">
+    <div id="skills" className="relative z-0 flex flex-col items-center justify-center md:top-28 mt-24 px-7  sm:px-6 lg:px-8">
+      <div className="relative flex flex-col items-center justify-between w-full max-w-[1100px] gap-6 py-5">
+        <h2 className="text-3xl font-semibold text-center text-white mb-4 sm:text-4xl md:text-4xl">
+          TECHNICAL SKILLS
+        </h2>
+        <p className="text-base text-center text-gray-300 max-w-lg mb-6 sm:text-lg md:text-xl">
           Here are some of my skills on which I have been working on for the past 2 years.
         </p>
-        <div className="w-auto flex flex-wrap mt-8 gap-8 justify-center">
+        <div className="w-full flex flex-wrap gap-6 justify-center">
           {skills.map((skill) => (
             <div
               key={skill.title}
-              className="w-full max-w-[550px] bg-gradient-to-r from-purple-800 via-purple-600 to-purple-400 border border-[#854CE6] shadow-2xl rounded-lg p-6 md:max-w-[450px] md:p-5"
+              className="w-full max-w-[400px] bg-gradient-to-r from-purple-800 via-purple-600 to-purple-400 border border-[#854CE6] shadow-2xl rounded-lg p-4 md:max-w-[350px] lg:max-w-[500px] lg:p-5"
             >
-              <h3 className="text-2xl font-bold text-white mb-4 text-center">{skill.title}</h3>
-              <div className="flex flex-wrap gap-4 mb-4 justify-center">
+              <h3 className="text-xl font-bold text-white mb-4 text-center md:text-2xl">
+                {skill.title}
+              </h3>
+              <div className="flex flex-wrap gap-4 justify-center">
                 {skill.skills.map((item) => (
                   <div
                     key={item.name}
-                    className="text-base font-normal text-gray-100 bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 flex items-center gap-3 shadow-md md:text-sm md:px-3 md:py-2"
+                    className="text-sm font-normal text-gray-100 bg-gray-800 border border-gray-600 rounded-lg px-3 py-2 flex items-center gap-2 md:text-base md:px-4 md:py-2"
                   >
-                    <img src={item.image} alt={item.name} className="w-8 h-8 object-contain block" />
+                    <img src={item.image} alt={item.name} className="w-6 h-6 md:w-8 md:h-8 object-contain" />
                     {item.name}
                   </div>
                 ))}
