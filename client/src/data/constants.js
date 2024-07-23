@@ -27,9 +27,9 @@ export const Bio = {
   github: "https://github.com/souvikree",
   resume: MyResume,
   linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
-  twitter: "https://x.com/SouvikG452003?t=kHPTgSCocOQXIh1mvB70SA&s=09",
-  instagram: "https://www.instagram.com/dreamydaze_ree?igsh=ZGozYndmYzd3Y20=/",
-  facebook: "https://www.facebook.com/profile.php?id=100075046226959&mibextid=ZbWKwL/",
+  twitter: "https://x.com/Reek003",
+  instagram: "https://www.instagram.com/script.reek/",
+  facebook: "https://www.facebook.com/profile.php?id=100075046226959",
 };
 
 export const skills = [
@@ -41,11 +41,11 @@ export const skills = [
         image:
           "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
       },
-      // {
-      //   name: "Redux",
-      //   image:
-      //     "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
-      // },
+      {
+        name: "Redux",
+        image:
+          "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
+      },
       // {
       //   name: "Next Js",
       //   image:
@@ -326,9 +326,9 @@ export const education = [
     id: 0,
     img: "https://upload.wikimedia.org/wikipedia/en/b/be/Heritage_Institute_of_Kolkata_Logo.png",
     school: "Heritage Institute of Technology, Kolkata",
-    date: "Oct 2021 - Sep 2025",
-    grade: "6.7 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Business system at Heritage Institute of Technology, Kolkata. I have completed 4 semesters and have a CGPA of 6.7. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. Now I am learning and working on exciting projects.",
+    date: "Oct 2021 - Jun 2025",
+    grade: "7.11 CGPA",
+    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Business Systems at the Heritage Institute of Technology, Kolkata. With a CGPA of 7.11, my coursework includes Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among other subjects. Now in my 4th year, 7th semester, I am actively engaged in learning and working on exciting projects.",
     degree: "Bachelor of Technology - BTech, Computer Science and Business system",
   },
   {
@@ -337,7 +337,7 @@ export const education = [
     school: "Bankura Banga Vidyalay, Bankura",
     date: "Apr 2019 - Apr 2021",
     grade: "89%",
-    desc: "I completed my class 12 high school education at Bankura Banga Vidyalay, Bankura in Science.",
+    desc: "I completed my higher secondary education with a focus on Science at Bankura Banga Vidyalay, Bankura. This rigorous academic experience provided me with a solid foundation in scientific principles and critical thinking, which have been instrumental in my subsequent studies and professional development.",
     degree: "WBCHSE(XII), Science",
   },
   {
@@ -346,7 +346,7 @@ export const education = [
     school: "Bankura Banga Vidyalay, Bankura",
     date: "Apr 2013 - Apr 2019",
     grade: "80%",
-    desc: "I completed my class 10 education at Bankura Banga Vidyalay, Bankura.",
+    desc: "I completed my secondary education at Bankura Banga Vidyalay, Bankura. This educational experience laid the groundwork for my academic and professional journey, equipping me with essential knowledge and skills.",
     degree: "WBBSC(X)",
   },
 ];
@@ -365,13 +365,21 @@ export const projects = [
       "MongoDb",
       "Node Js",
       "Express Js",
-      "Redux",
       "NodeMailer",
       "Tailwindcss",
     ],
     category: "web app",
     github: "https://github.com/souvikree/FrontRow",
     webapp: "https://buyfrontrow.netlify.app/",
+    member: [
+      {
+        name: "Souvik Ghosh",
+        img: "https://avatars.githubusercontent.com/u/143630779?v=4",
+        linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
+        github: "https://github.com/souvikree",
+      },
+      
+    ],
   },
   {
     id: 1,
@@ -380,24 +388,24 @@ export const projects = [
     description:
       "Educonnect is an e-library project that I am developing to provide a platform for users to access a collection of digital books, articles, and other educational resources.",
     image: EduConnect ,
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Bootstrap", "Redux", "NodeMailer"],
+    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Tailwindcss", "Redux", "NodeMailer"],
     category: "web app",
     github: "https://github.com/souvikree/EduConnect",
     webapp: "https://edu-connect-jade.vercel.app/",
-    // member: [
-    //   {
-    //     name: "Souvik Ghosh",
-    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-    //     linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
-    //     github: "https://github.com/souvikree",
-    //   },
-    //   {
-    //     name: "Chandan Maity",
-    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-    //     linkedin: "https://www.linkedin.com/in/chandan-maity-4b7643265/",
-    //     github: "https://github.com/upasana0710",
-    //   },
-    // ],
+    member: [
+      {
+        name: "Souvik Ghosh",
+        img: "https://avatars.githubusercontent.com/u/143630779?v=4",
+        linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
+        github: "https://github.com/souvikree",
+      },
+      // {
+      //   name: "Chandan Maity",
+      //   img: "https://avatars.githubusercontent.com/u/144256228?v=4",
+      //   linkedin: "https://www.linkedin.com/in/chandan-maity-4b7643265/",
+      //   github: "https://github.com/chandan789maity",
+      // },
+    ],
   },
   {
     id: 2,
@@ -410,20 +418,15 @@ export const projects = [
     category: "web app",
     github: "https://github.com/souvikree/myShare",
     webapp: "https://openmyshare.vercel.app/",
-    // member: [
-    //   {
-    //     name: "Souvik Ghosh",
-    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-    //     linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
-    //     github: "https://github.com/souvikree",
-    //   },
-    //   {
-    //     name: "Chandan Maity",
-    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-    //     linkedin: "https://www.linkedin.com/in/chandan-maity-4b7643265/",
-    //     github: "https://github.com/upasana0710",
-    //   },
-    // ],
+    member: [
+      {
+        name: "Souvik Ghosh",
+        img: "https://avatars.githubusercontent.com/u/143630779?v=4",
+        linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
+        github: "https://github.com/souvikree",
+      },
+      
+    ],
   },
   // {
   //   id: 9,
@@ -450,24 +453,19 @@ export const projects = [
       "A dataset is selected from the UCI repository with patient's medical history and attributes. By using this dataset, we predict whether the patient can have a heart disease or not.",
     // image:
     //   "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
-    tags: ["Python"],
+    tags: ["Python", "Pandas", "NumPy", "scikit-learn", "KNN classifier"],
     category: "machine learning",
-    // github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
+    github: "https://github.com/souvikree/Heart-deases",
    // webapp: "https://brain-tumor.netlify.app/",
-    // member: [
-    //   {
-    //     name: "Rishav Chanda",
-    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-    //     github: "https://github.com/rishavchanda/",
-    //   },
-    //   {
-    //     name: "Upasana Chaudhuri",
-    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-    //     github: "https://github.com/upasana0710",
-    //   },
-    // ],
+   member: [
+    {
+      name: "Souvik Ghosh",
+      img: "https://avatars.githubusercontent.com/u/143630779?v=4",
+      linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
+      github: "https://github.com/souvikree",
+    },
+    
+  ],
   },
   // {
   //   id: 3,

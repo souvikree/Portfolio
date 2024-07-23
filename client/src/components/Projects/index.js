@@ -54,7 +54,7 @@ const Projects = ({ openModal, setOpenModal }) => {
         <p className="text-base text-center text-gray-400 max-w-lg mb-6 sm:text-lg md:text-xl">
           I have worked on a wide range of projects. From web apps to ML projects and android apps. Here are some of my projects.
         </p>
-        <div className="flex flex-wrap justify-center text-white text-base rounded-full font-medium my-5 gap-3 sm:text-sm md:text-base">
+        <div className="flex flex-wrap justify-center text-white text-sm rounded-full font-medium my-5 gap-3 sm:text-sm md:text-sm">
           {['all', 'web app', 'Mobile app', 'machine learning'].map((category) => (
             <React.Fragment key={category}>
               <div 

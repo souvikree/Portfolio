@@ -13,13 +13,13 @@ const Footer = () => {
           Passionate developer with experience in web and mobile applications. Connect with me on social media!
         </p>
         <div className="flex gap-6 mt-6">
-          <a href={Bio.facebook} target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-blue-600 transition-colors duration-300">
+          <a href={Bio.facebook} target="_blank" rel="noopener noreferrer" className="text-white text-4xl hover:text-blue-600 transition-colors duration-300">
             <FacebookIcon fontSize="inherit" />
           </a>
-          <a href={Bio.twitter} target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-blue-400 transition-colors duration-300">
+          <a href={Bio.twitter} target="_blank" rel="noopener noreferrer" className="text-white text-4xl hover:text-blue-400 transition-colors duration-300">
             <TwitterIcon fontSize="inherit" />
           </a>
-          <a href={Bio.insta} target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-pink-500 transition-colors duration-300">
+          <a href={Bio.instagram} target="_blank" rel="noopener noreferrer" className="text-white text-4xl hover:text-pink-500 transition-colors duration-300">
             <InstagramIcon fontSize="inherit" />
           </a>
         </div>

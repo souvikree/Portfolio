@@ -9,7 +9,7 @@ const ExperienceCard = ({ experience }) => {
 
     return (
         <div
-            className="relative w-[300px] rounded-lg border border-[#854CE6] shadow-lg p-4 flex flex-col gap-3 transition-transform duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 hover:border-[#6E4AB6] overflow-hidden md:w-[850px]  "
+            className="relative w-[300px] rounded-lg border border-[#854CE6] shadow-lg p-4 flex flex-col gap-3 transition-transform duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 hover:border-[#6E4AB6] overflow-hidden md:w-[700px]  "
             onClick={handleClick}
         >
             

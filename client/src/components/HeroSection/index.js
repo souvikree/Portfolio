@@ -33,7 +33,7 @@ const HeroSection = () => {
             </a>
           </div>
 
-          <div id="Right" className='w-full flex-1 flex flex-col justify-center items-center md:justify-end relative md:mb-0'>
+          <div id="Right" className='w-full flex-1 flex flex-col justify-center items-center md:justify-end relative md:mb-7'>
             <div className="absolute w-full h-full max-w-[1760px] left-1/2 transform -translate-x-1/2 flex justify-center items-center md:justify-end order-last md:order-first">
               <HeroBgAnimation />
             </div>

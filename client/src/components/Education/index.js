@@ -17,7 +17,7 @@ const Index = () => {
                 <p className="text-sm text-gray-300 text-center mb-6 sm:text-base md:text-lg">
                     My education has been a journey of self-discovery and growth. My educational details are as follows.
                 </p>
-                <div className="w-full max-w-3xl md:max-w-xl mt-4 flex flex-col items-center gap-4">
+                <div className="w-full max-w-3xl md:max-w-xl mt-4 mr-7 flex flex-col items-center gap-4">
                     <Timeline>
                         {education.map((edu, index) => (
                             <TimelineItem key={index}>

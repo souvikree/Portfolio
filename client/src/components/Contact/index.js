@@ -23,13 +23,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center relative z-0 px-4 py-8 md:px-6 md:py-12">
-      <div className="relative flex flex-col items-center w-full max-w-2xl px-6 py-8 gap-6">
+    <div className="flex flex-col items-center justify-center relative z-0 px-3  py-8 md:px-6 md:py-12">
+      <div className="relative flex flex-col items-center w-full max-w-2xl px-3 py-8 gap-6">
         <h1 className="text-4xl font-bold text-white mb-4 md:text-3xl">Contact</h1>
         <p className="text-lg text-gray-300 text-center mb-6 md:text-base">
           Feel free to reach out with any questions or opportunities!
         </p>
-        <form ref={form} onSubmit={handleSubmit} className="w-full p-8 bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 rounded-lg shadow-2xl space-y-4">
+        <form ref={form} onSubmit={handleSubmit} className="w-full p-6 bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 rounded-lg shadow-2xl space-y-4">
           <h2 className="text-2xl font-semibold text-white mb-4">Email Me 🚀</h2>
           <input
             type="email"

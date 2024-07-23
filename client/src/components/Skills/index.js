@@ -3,9 +3,9 @@ import { skills } from '../../data/constants';
 
 const Skills = () => {
   return (
-    <div id="skills" className="relative z-0 flex flex-col items-center justify-center md:top-28 mt-24 px-7  sm:px-6 lg:px-8">
+    <div id="skills" className="relative z-0 flex flex-col items-center justify-center md:top-28 mt-24 px-7 sm:px-6 lg:px-8">
       <div className="relative flex flex-col items-center justify-between w-full max-w-[1100px] gap-6 py-5">
-        <h2 className="text-3xl font-semibold text-center text-white mb-4 sm:text-4xl md:text-4xl">
+        <h2 className="text-3xl font-semibold text-center text-white mb-4  sm:text-4xl md:text-4xl">
           TECHNICAL SKILLS
         </h2>
         <p className="text-base text-center text-gray-300 max-w-lg mb-6 sm:text-lg md:text-xl">
@@ -24,9 +24,9 @@ const Skills = () => {
                 {skill.skills.map((item) => (
                   <div
                     key={item.name}
-                    className="text-sm font-normal text-gray-100 bg-gray-800 border border-gray-600 rounded-lg px-3 py-2 flex items-center gap-2 md:text-base md:px-4 md:py-2"
+                    className="text-sm font-normal text-gray-100 bg-gray-800 border border-gray-600 rounded-lg px-3 py-2 flex items-center gap-2 md:text-sm md:px-4 md:py-2"
                   >
-                    <img src={item.image} alt={item.name} className="w-6 h-6 md:w-8 md:h-8 object-contain" />
+                    <img src={item.image} alt={item.name} className="w-6 h-6 md:w-6 md:h-6 object-contain" />
                     {item.name}
                   </div>
                 ))}
