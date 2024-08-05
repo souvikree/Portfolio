@@ -369,7 +369,7 @@ export const projects = [
       "Tailwindcss",
     ],
     category: "web app",
-    github: "https://github.com/souvikree/FrontRow",
+    // github: "https://github.com/souvikree/FrontRow",
     webapp: "https://buyfrontrow.netlify.app/",
     member: [
       {
@@ -390,7 +390,7 @@ export const projects = [
     image: EduConnect ,
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Tailwindcss", "Redux", "NodeMailer"],
     category: "web app",
-    github: "https://github.com/souvikree/EduConnect",
+    // github: "https://github.com/souvikree/EduConnect",
     webapp: "https://edu-connect-jade.vercel.app/",
     member: [
       {
@@ -416,7 +416,7 @@ export const projects = [
     image: MyShare ,
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Tailwindcss"],
     category: "web app",
-    github: "https://github.com/souvikree/myShare",
+    // github: "https://github.com/souvikree/myShare",
     webapp: "https://openmyshare.vercel.app/",
     member: [
       {
