@@ -5,6 +5,7 @@ import MyResume from "../files/My_Resume.pdf"
 import Express from "../images/express.png"
 import Node from "../images/node.png"
 import Go from "../images/go.png"
+import HomePage from "../images/HomePage.png"
 import Git from "../images/git.svg"
 import Vercel from "../images/vercel.png"
 import Adobe from "../images/adobe.png"
@@ -46,11 +47,11 @@ export const skills = [
         image:
           "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
       },
-      // {
-      //   name: "Next Js",
-      //   image:
-      //     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
-      // },
+      {
+        name: "Next Js",
+        image:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
+      },
       {
         name: "HTML",
         image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
@@ -101,11 +102,11 @@ export const skills = [
       //   name: "Graph Ql",
       //   image: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
       // },
-      // {
-      //   name: "MySQL",
-      //   image:
-      //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-      // },
+      {
+        name: "MySQL",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+      },
       {
         name: "Postgresql",
         image: "https://www.postgresql.org/media/img/about/press/elephant.png",
@@ -369,7 +370,7 @@ export const projects = [
       "Tailwindcss",
     ],
     category: "web app",
-    // github: "https://github.com/souvikree/FrontRow",
+    github: "https://github.com/souvikree/FrontRow",
     webapp: "https://buyfrontrow.netlify.app/",
     member: [
       {
@@ -428,25 +429,37 @@ export const projects = [
       
     ],
   },
-  // {
-  //   id: 9,
-  //   title: "Spoticlone",
-  //   date: "Jun 2023 - Jul 2023",
-  //   description:
-  //     "a project that involved creating a basic Spotify clone using HTML, CSS, and JavaScript. This project was designed to showcase my skills in front-end web development.It is a responsive and user-friendly web application that allows users to play music.I used HTML and CSS to design and style the interface, and I implemented JavaScript to handle user input and interaction such as basic playback controls -play, pause, and next.",
-  //   // image:
-  //   //   "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
-  //   tags: [
-  //     "HTML",
-  //     "CSS",
-  //     "Javascript"
-  //   ],
-  //   category: "web app",
-  //   github: "https://github.com/souvikree/spoticlone",
-  //   // webapp: "https://trackify.duckdns.org",
-  // },
   {
     id: 3,
+    title: "Portfolio-Tracker",
+    date: "Dec 2024 - Jan 2025",
+    description:
+      "A full-stack web application for managing stock portfolios, featuring Google OAuth authentication and real-time stock price tracking.",
+    image: HomePage,
+    tags: [
+      "Vite",
+      "Google OAuth",
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "Finnhub API",
+      "Tailwind CSS",
+    ],
+    category: "web app",
+    github: "https://github.com/souvikree/Portfolio-Tracker",
+    webapp: "https://portfolio-tracker-ebon.vercel.app/",
+    member: [
+      {
+        name: "Souvik Ghosh",
+        img: "https://avatars.githubusercontent.com/u/143630779?v=4",
+        linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
+        github: "https://github.com/souvikree",
+      },
+      
+    ],
+  },
+  {
+    id: 4,
     title: "Heart Decease Prediction",
     date: "Jan 2024",
     description:
