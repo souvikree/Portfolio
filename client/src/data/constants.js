@@ -28,7 +28,7 @@ export const Bio = {
   github: "https://github.com/souvikree",
   resume: MyResume,
   linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
-  twitter: "https://x.com/Reek003",
+  twitter: "https://x.com/reek_me",
   instagram: "https://www.instagram.com/script.reek/",
   facebook: "https://www.facebook.com/profile.php?id=100075046226959",
 };
