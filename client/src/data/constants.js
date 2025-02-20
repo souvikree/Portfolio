@@ -13,6 +13,7 @@ import Postman from "../images/postman.svg"
 import Figma from "../images/figma"
 import Tailwind from "../images/tailwind"
 import Render from "../images/Render.png"
+import Docker from "../images/docker.png"
 
 
 export const Bio = {
@@ -212,6 +213,10 @@ export const skills = [
       {
         name: "Figma",
         image:Figma ,
+      },
+      {
+        name: "Docker",
+        image: Docker,
       },
     ],
   },
