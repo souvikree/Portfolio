@@ -14,6 +14,7 @@ import Figma from "../images/figma"
 import Tailwind from "../images/tailwind"
 import Render from "../images/Render.png"
 import Docker from "../images/docker.png"
+import BloodLink from "../images/BloodLink.png"
 
 
 export const Bio = {
@@ -333,8 +334,8 @@ export const education = [
     img: "https://upload.wikimedia.org/wikipedia/en/b/be/Heritage_Institute_of_Kolkata_Logo.png",
     school: "Heritage Institute of Technology, Kolkata",
     date: "Oct 2021 - Jun 2025",
-    grade: "7.11 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Business Systems at the Heritage Institute of Technology, Kolkata. With a CGPA of 7.11, my coursework includes Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among other subjects. Now in my 4th year, 7th semester, I am actively engaged in learning and working on exciting projects.",
+    grade: "7.53 CGPA",
+    desc: "I have completed my Bachelor's degree in Computer Science and Business Systems from the Heritage Institute of Technology, Kolkata. With a CGPA of 7.11, my coursework includes Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among other subjects. Now in my 4th year, 7th semester, I am actively engaged in learning and working on exciting projects.",
     degree: "Bachelor of Technology - BTech, Computer Science and Business system",
   },
   {
@@ -389,10 +390,68 @@ export const projects = [
   },
   {
     id: 1,
+    title: "BloodLink",
+    date: "Jan 2025 - May 2025",
+    description:
+      "BloodLink is a cutting-edge platform designed to address the critical issue of timely blood access. It connects blood donors, recipients, and blood banks using modern technologies to ensure seamless, real-time coordination. The platform features a user-friendly interface for donors to register, search for recipients, and offer blood donations. Recipients can easily find compatible donors and request blood. Blood banks can manage their inventory and facilitate the donation process efficiently.",
+    image: BloodLink,
+  
+    tags: [
+      "Next Js",
+      "MongoDb",
+      "Node Js",
+      "Express Js",
+      "Tailwindcss",
+      "Google Maps API",
+    ],
+    category: "web app",
+    github: "https://github.com/souvikree/BloodLink",
+    webapp: "",
+    member: [
+      {
+        name: "Souvik Ghosh",
+        img: "https://avatars.githubusercontent.com/u/143630779?v=4",
+        linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
+        github: "https://github.com/souvikree",
+      },
+      
+    ],
+  },
+  {
+    id: 2,
+    title: "Exam Portal",
+    date: "July 2024 - August 2024",
+    description:
+      "",
+    image: "",
+  
+    tags: [
+      "React Js",
+      "Java",
+      "JDBC",
+      "Spring Boot",
+      "MySQL",
+      "Tailwindcss",
+    ],
+    category: "web app",
+    github: "https://github.com/souvikree/ExamPortal",
+    webapp: "",
+    member: [
+      {
+        name: "Souvik Ghosh",
+        img: "https://avatars.githubusercontent.com/u/143630779?v=4",
+        linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
+        github: "https://github.com/souvikree",
+      },
+      
+    ],
+  },
+  {
+    id: 3,
     title: "EduConnect",
     date: "July 2023 - September 2023",
     description:
-      "Educonnect is an e-library project that I am developing to provide a platform for users to access a collection of digital books, articles, and other educational resources.",
+    "Educonnect is an e-library project that I am developing to provide a platform for users to access a collection of digital books, articles, and other educational resources.",
     image: EduConnect ,
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Tailwindcss", "Redux", "NodeMailer"],
     category: "web app",
@@ -406,15 +465,43 @@ export const projects = [
         github: "https://github.com/souvikree",
       },
       // {
-      //   name: "Chandan Maity",
-      //   img: "https://avatars.githubusercontent.com/u/144256228?v=4",
-      //   linkedin: "https://www.linkedin.com/in/chandan-maity-4b7643265/",
-      //   github: "https://github.com/chandan789maity",
-      // },
-    ],
-  },
+        //   name: "Chandan Maity",
+        //   img: "https://avatars.githubusercontent.com/u/144256228?v=4",
+        //   linkedin: "https://www.linkedin.com/in/chandan-maity-4b7643265/",
+        //   github: "https://github.com/chandan789maity",
+        // },
+      ],
+    },
+    {
+      id: 4,
+      title: "Insurance Management System",
+      date: "November 2024 - December 2024",
+      description:
+        "The Insurance Management System or Insurance Claim Management System Project using Spring Boot & React Js ensures a seamless experience for all involved. As an administrator, you can easily add multiple Policies in the system by adding the policy details like name, premium amount and the coverage details. After adding the Policies, all the policies will be visible in the home page of the website. And Customers can view all policies details and from there they can apply for the policies. Once Customers apply for any policies, Admin will be able to the see policy applications in his dashboard and from here Admin can accept or reject the application. Here, customer can only apply for the policy application after the login, so from the home page itself customer can register and login themself.",
+      image: "",
+    
+      tags: [
+        "React Js",
+        "JDBC",
+        "Spring Boot",
+        "MySQL",
+        "Microservices",
+      ],
+      category: "web app",
+      github: "https://github.com/souvikree/Insurance-Management",
+      webapp: "",
+      member: [
+        {
+          name: "Souvik Ghosh",
+          img: "https://avatars.githubusercontent.com/u/143630779?v=4",
+          linkedin: "https://www.linkedin.com/in/souvik-ghosh-97a208227/",
+          github: "https://github.com/souvikree",
+        },
+        
+      ],
+    },
   {
-    id: 2,
+    id: 5,
     title: "MyShare",
     date: "Jan 2024",
     description:
@@ -435,7 +522,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 6,
     title: "Portfolio-Tracker",
     date: "Dec 2024 - Jan 2025",
     description:
@@ -464,7 +551,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 7,
     title: "Heart Decease Prediction",
     date: "Jan 2024",
     description:
