@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { FaBars, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Icon } from "@iconify/react";
